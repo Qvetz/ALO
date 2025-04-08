@@ -3,7 +3,7 @@ def main():
     conn = sqlite3.connect('medical.db')
     cur = conn.cursor()
     
-    cur.execute('SELECT PatientID, Name, SecondName, Phone FROM Patient')
+    cur.execute('SELECT PatientID, Name, SecondName, Phone FROM Durka')
     print('Пациенты:')
     results = cur.fetchall()
     for row in results:

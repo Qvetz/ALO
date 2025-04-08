@@ -2,7 +2,7 @@ import sqlite3
 def main():
     conn = sqlite3.connect('medical.db')
     cur = conn.cursor()
-    cur.execute('''CREATE TABLE Patient(PatientID INTEGER PRIMARY KEY NOT NULL,
+    cur.execute('''CREATE TABLE Durka(PatientID INTEGER PRIMARY KEY NOT NULL,
                                         Name TEXT,
                                         SecondName TEXT,
                                         Phone INTEGER)''')

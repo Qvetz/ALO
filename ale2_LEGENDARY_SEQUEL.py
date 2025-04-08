@@ -2,7 +2,7 @@ import sqlite3
 def main():
     conn = sqlite3.connect('medical.db')
     cur = conn.cursor()
-    cur.execute('''INSERT INTO Patient (PatientID, Name, SecondName, Phone)
+    cur.execute('''INSERT INTO Durka (PatientID, Name, SecondName, Phone)
                                         VALUES(4224576, 'Максимильяно', 'Тухачевский', 79187776354),
                                               (9943833, 'Джон', 'Доу', 79998266655),
                                               (2281337, 'Иосиф', 'Джугашвили', 71488228666)''')
